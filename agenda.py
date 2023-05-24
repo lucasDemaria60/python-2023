@@ -45,7 +45,7 @@ while True:
     if op == 1:
         while(True):
             nombre = input("Ingrese nombre del contacto: ")
-            telefono = input("Ingrese el numero de telefono: ")
+            telefono = input("Ingrese el numero de teléfono: ")
             flag = 0
             for name, cel in agenda.items():
                 if nombre == name:
@@ -53,7 +53,7 @@ while True:
                         op = input(f"""
                         Nombre de contacto encontrado en la agenda
                         nombre: {name}
-                        telefono: {cel}                   
+                        teléfono: {cel}                   
                         ¿Desea editarlo?
                         1. Si
                         2. No
@@ -61,7 +61,7 @@ while True:
                         op = validarOpcionDos(op)
                         if op == 1:
                             nombre = input("Ingrese nuevo nombre de contacto: ")
-                            telefono = input("Ingrese el nuevo numero de telefono: ")
+                            telefono = input("Ingrese el nuevo numero de teléfono: ")
                             agenda[nombre]=telefono
                             flag = 1
                             break
@@ -119,14 +119,14 @@ while True:
                 if buscar == name or buscar == cel:
                     print(f"""
                     Nombre: {name}
-                    Telefono: {cel}
+                    Teléfono: {cel}
                     """)
                     b = 1
             if b == 0:
                 print("Contacto no encontrado")
             while True:
                 op = input("""
-                ¿Desea buscar algun contacto mas?
+                ¿Desea buscar algún contacto mas?
                 1. Si
                 2. No
                 """)
@@ -149,7 +149,7 @@ while True:
             b = 0
             for name, cel in agenda.items():
                 if delet == name or delet == cel:
-                    op = input(f"Desea eliminar este contacto?\nNombre: {name} Telefono: {cel} 1. Si\n2. No\n:")
+                    op = input(f"Desea eliminar este contacto?\nNombre: {name} Teléfono: {cel} 1. Si\n2. No\n:")
                     validarOpcionDos(op)
                     b = 1
                 else:
@@ -164,7 +164,7 @@ while True:
                 
             while True:
                 op = input("""
-                ¿Desea eliminar algun contacto mas?
+                ¿Desea eliminar algún contacto mas?
                 1. Si
                 2. No
                 """)
