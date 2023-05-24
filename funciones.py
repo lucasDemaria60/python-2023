@@ -6,6 +6,7 @@ def checkNum(num):
         except ValueError:
             try:
                 num = float(num)
+                return num
             except ValueError:
                 print (f"El valor '{num}' no es un numero")
                 num = input("Ingrese un numero valido: ")
