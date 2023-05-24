@@ -1,4 +1,4 @@
-def validarOpcion12(opcion):
+def validarOpcionDos(opcion):
     try:
         opcion = int(opcion)
         if opcion == 1 or opcion == 2:
@@ -12,7 +12,7 @@ def validarOpcion12(opcion):
         opcion = 0
         return opcion
     
-def validarOpcion12345(opcion):
+def validarOpcionCinco(opcion):
     try:
         opcion = int(opcion)
         if opcion == 1 or opcion == 2 or opcion == 3 or opcion == 4 or opcion == 5:
@@ -41,7 +41,7 @@ while True:
     4. Mostrar todos los contactos
     5. Salir
     """)
-    op = validarOpcion12345(op)
+    op = validarOpcionCinco(op)
     if op == 1:
         while(True):
             nombre = input("Ingrese nombre del contacto: ")
@@ -58,7 +58,7 @@ while True:
                         1. Si
                         2. No
                         """)
-                        op = validarOpcion12(op)
+                        op = validarOpcionDos(op)
                         if op == 1:
                             nombre = input("Ingrese nuevo nombre de contacto: ")
                             telefono = input("Ingrese el nuevo numero de telefono: ")
@@ -77,7 +77,7 @@ while True:
                         1. Si
                         2. No
                         """)
-                        op = validarOpcion12(op)
+                        op = validarOpcionDos(op)
                         if op == 0:
                             continue
                         if op == 1:
@@ -97,7 +97,7 @@ while True:
                 1. Si
                 2. No
                 """)
-                op = validarOpcion12(op)
+                op = validarOpcionDos(op)
                 if op == 0:
                     continue
                 if op == 1:
@@ -130,7 +130,7 @@ while True:
                 1. Si
                 2. No
                 """)
-                op = validarOpcion12(op)
+                op = validarOpcionDos(op)
                 if op == 0:
                     continue
                 if op == 1:
@@ -150,7 +150,7 @@ while True:
             for name, cel in agenda.items():
                 if delet == name or delet == cel:
                     op = input(f"Desea eliminar este contacto?\nNombre: {name} Telefono: {cel} 1. Si\n2. No\n:")
-                    validarOpcion12(op)
+                    validarOpcionDos(op)
                     b = 1
                 else:
                     b = 0
@@ -168,7 +168,7 @@ while True:
                 1. Si
                 2. No
                 """)
-                op = validarOpcion12(op)
+                op = validarOpcionDos(op)
                 if op == 0:
                     continue
                 if op == 1:
