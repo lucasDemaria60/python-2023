@@ -9,4 +9,4 @@ def checkNum(num):
                 return num
             except ValueError:
                 print (f"El valor '{num}' no es un numero")
-                num = input("Ingrese un numero valido: ")
+                num = input("Ingrese un número valido: ")
